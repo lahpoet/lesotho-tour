@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="A student tourism website introducing visitors to Lesotho." name="description"/>
+
+        <title>Places to Visit | Discover Lesotho</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="container py-4">
+                <p class="eyebrow mb-1">THE MOUNTAIN KINGDOM</p>
+                <h1>Places to Visit</h1>
+                <p class="mb-0">Find a destination that interests you</p>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Discover Lesotho</a>
+
+                <button aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <button aria-pressed="false" class="btn btn-outline-light btn-sm" id="themeToggle" type="button">Dark mode</button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container py-4">
+            <h2>Explore these destinations</h2>
+            <p>Search by name or use the category buttons to narrow the list.</p>
+
+            <div class="row g-2 mb-3">
+                <div class="col-md-7">
+                    <label class="form-label" for="placeSearch">Search destinations</label>
+                    <input class="form-control" id="placeSearch" placeholder="Try waterfall, dam or park" type="search"/>
+                </div>
+
+                <div class="col-md-5">
+                    <span class="form-label d-block">Filter by type</span>
+
+                    <div aria-label="Filter destinations" class="btn-group flex-wrap" role="group">
+                        <button class="btn btn-outline-success filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-outline-success filter-btn" data-filter="nature">Nature</button>
+                        <button class="btn btn-outline-success filter-btn" data-filter="culture">Culture</button>
+                        <button class="btn btn-outline-success filter-btn" data-filter="history">History</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="placeList">
+                <div class="col-md-6 col-lg-4 place-item" data-category="nature">
+                    <article class="card h-100 place-card">
+                        <img alt="Tall mountain peaks" class="card-img-top" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=700&amp;q=80"/>
+
+                        <div class="card-body">
+                            <span class="badge text-bg-success">Nature</span>
+                            <h3 class="h5 mt-2">Maletsunyane Falls</h3>
+                            <p>A well-known waterfall near Semonkong with dramatic scenery and outdoor activities.</p>
+                            <button class="btn btn-sm btn-outline-success favourite-btn" data-place="Maletsunyane Falls">Save favourite</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 place-item" data-category="nature">
+                    <article class="card h-100 place-card">
+                        <img alt="Open landscape and hills" class="card-img-top" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=700&amp;q=80"/>
+
+                        <div class="card-body">
+                            <span class="badge text-bg-success">Nature</span>
+                            <h3 class="h5 mt-2">Katse Dam</h3>
+                            <p>A reservoir surrounded by mountains and part of the Lesotho Highlands Water Project.</p>
+                            <button class="btn btn-sm btn-outline-success favourite-btn" data-place="Katse Dam">Save favourite</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 place-item" data-category="history">
+                    <article class="card h-100 place-card">
+                        <img alt="Mountain landscape under a clear sky" class="card-img-top" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=700&amp;q=80"/>
+
+                        <div class="card-body">
+                            <span class="badge text-bg-warning">History</span>
+                            <h3 class="h5 mt-2">Thaba-Bosiu</h3>
+                            <p>A historic plateau associated with King Moshoeshoe I and the formation of the Basotho nation.</p>
+                            <button class="btn btn-sm btn-outline-success favourite-btn" data-place="Thaba-Bosiu">Save favourite</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 place-item" data-category="nature">
+                    <article class="card h-100 place-card">
+                        <img alt="Wild landscape with hills and trees" class="card-img-top" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&amp;fit=crop&amp;w=700&amp;q=80"/>
+
+                        <div class="card-body">
+                            <span class="badge text-bg-success">Nature</span>
+                            <h3 class="h5 mt-2">Sehlabathebe National Park</h3>
+                            <p>A protected area known for rock formations, open landscapes and wildlife.</p>
+                            <button class="btn btn-sm btn-outline-success favourite-btn" data-place="Sehlabathebe National Park">Save favourite</button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 place-item" data-category="culture">
+                    <article class="card h-100 place-card">
+                        <img alt="Traditional rural landscape" class="card-img-top" src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&amp;fit=crop&amp;w=700&amp;q=80"/>
+
+                        <div class="card-body">
+                            <span class="badge text-bg-info">Culture</span>
+                            <h3 class="h5 mt-2">Local craft markets</h3>
+                            <p>Look for handmade crafts and learn more about local creative traditions.</p>
+                            <button class="btn btn-sm btn-outline-success favourite-btn" data-place="Local craft markets">Save favourite</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <p class="alert alert-warning mt-3" hidden="" id="noResults">No places matched your search. Try another word.</p>
+
+            <section class="mt-4">
+                <h2 class="h4">Your saved places</h2>
+                <p aria-live="polite" id="favouriteList">No favourites saved yet.</p>
+            </section>
+        </main>
+
+        <footer class="site-footer mt-5">
+            <div class="container py-4">
+                <p class="mb-1">© 2026 Discover Lesotho Tourism</p>
+                <small></small>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

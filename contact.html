@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="A student tourism website introducing visitors to Lesotho." name="description" />
+
+    <title>Contact | Discover Lesotho</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container py-4">
+            <p class="eyebrow mb-1">THE MOUNTAIN KINGDOM</p>
+            <h1>Contact</h1>
+            <p class="mb-0">Send an enquiry or plan your visit to Lesotho</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Discover Lesotho</a>
+
+            <button
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#mainNav"
+                data-bs-toggle="collapse"
+                type="button"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <button
+                    aria-pressed="false"
+                    class="btn btn-outline-light btn-sm"
+                    id="themeToggle"
+                    type="button"
+                >
+                    Dark mode
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <h2>Send an enquiry</h2>
+                <p>
+                    This sample form demonstrates validation. It does not send
+                    messages to a real tourism office.
+                </p>
+
+                <form class="form-panel" id="contactForm" novalidate="">
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Full name</label>
+                        <input
+                            class="form-control"
+                            id="name"
+                            minlength="2"
+                            name="name"
+                            required=""
+                            type="text"
+                        />
+                        <div class="invalid-feedback">
+                            Please enter your name (at least 2 characters).
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email address</label>
+                        <input
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            required=""
+                            type="email"
+                        />
+                        <div class="invalid-feedback">
+                            Enter a valid email address.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="phone">
+                            Phone number (optional)
+                        </label>
+                        <input
+                            class="form-control"
+                            id="phone"
+                            name="phone"
+                            pattern="[0-9+() -]{7,20}"
+                            type="tel"
+                        />
+                        <div class="invalid-feedback">
+                            Please enter a valid phone number.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="interest">
+                            What are you interested in?
+                        </label>
+                        <select
+                            class="form-select"
+                            id="interest"
+                            name="interest"
+                            required=""
+                        >
+                            <option value="">Choose one</option>
+                            <option>Places to visit</option>
+                            <option>Accommodation</option>
+                            <option>Culture and activities</option>
+                            <option>Booking help</option>
+                            <option>Other question</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please choose a topic.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            minlength="10"
+                            name="message"
+                            required=""
+                            rows="5"
+                        ></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a message of at least 10 characters.
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">
+                        Submit enquiry
+                    </button>
+
+                    <p
+                        aria-live="polite"
+                        class="mt-3"
+                        id="formMessage"
+                        role="status"
+                    ></p>
+                </form>
+            </div>
+
+            <aside class="col-lg-5">
+                <div class="highlight p-4 rounded">
+                    <h2 class="h4">Before you send</h2>
+                    <p>
+                        For this student project, submitted details stay in the
+                        browser and are not sent to an organisation.
+                    </p>
+                    <p>
+                        For trip planning, include the dates you hope to travel
+                        and the activities you are interested in.
+                    </p>
+                </div>
+            </aside>
+        </div>
+
+        <hr class="my-5" />
+
+        <section class="mt-4" id="plan-visit">
+            <h2>Plan a Visit</h2>
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    
+                    <p>
+                        Use this sample form to make a simple trip plan. It does
+                        not make a real reservation.
+                    </p>
+
+                    <form class="form-panel" id="bookingForm" novalidate="">
+                        <div class="mb-3">
+                            <label class="form-label" for="bookingName">
+                                Full name
+                            </label>
+                            <input
+                                class="form-control"
+                                id="bookingName"
+                                minlength="2"
+                                name="bookingName"
+                                required=""
+                                type="text"
+                            />
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="bookingEmail">
+                                Email
+                            </label>
+                            <input
+                                class="form-control"
+                                id="bookingEmail"
+                                name="bookingEmail"
+                                required=""
+                                type="email"
+                            />
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="travelDate">
+                                Preferred travel date
+                            </label>
+                            <input
+                                class="form-control"
+                                id="travelDate"
+                                name="travelDate"
+                                required=""
+                                type="date"
+                            />
+                            <div class="invalid-feedback">
+                                Choose a travel date.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="bookingDestination">
+                                Destination
+                            </label>
+                            <select
+                                class="form-select"
+                                id="bookingDestination"
+                                required=""
+                            >
+                                <option value="">Choose a destination</option>
+                                <option>Maletsunyane Falls</option>
+                                <option>Katse Dam</option>
+                                <option>Thaba-Bosiu</option>
+                                <option>Sehlabathebe National Park</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Choose a destination.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="peopleCount">
+                                Number of visitors
+                            </label>
+                            <input
+                                class="form-control"
+                                id="peopleCount"
+                                max="20"
+                                min="1"
+                                required=""
+                                type="number"
+                                value="1"
+                            />
+                            <div class="invalid-feedback">
+                                Choose between 1 and 20 visitors.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="activityType">
+                                Main activity
+                            </label>
+                            <select class="form-select" id="activityType">
+                                <option value="100">
+                                    Sightseeing (M100 per person estimate)
+                                </option>
+                                <option value="250">
+                                    Guided outdoor activity (M250 per person estimate)
+                                </option>
+                                <option value="150">
+                                    Culture visit (M150 per person estimate)
+                                </option>
+                            </select>
+                        </div>
+
+                        <p>
+                            <strong>
+                                Estimated activity cost:
+                                <span id="estimatedCost">M100</span>
+                            </strong>
+                        </p>
+
+                        <button class="btn btn-primary" type="submit">
+                            Save sample plan
+                        </button>
+
+                        <p
+                            aria-live="polite"
+                            class="mt-3"
+                            id="bookingMessage"
+                            role="status"
+                        ></p>
+                    </form>
+                </div>
+
+                <aside class="col-lg-5">
+                    <div class="highlight rounded p-4">
+                        <h2 class="h4">A note about prices</h2>
+                        <p>
+                            The amounts are example estimates for demonstrating
+                            a JavaScript calculator. They are not actual
+                            operator prices and do not include transport or
+                            accommodation.
+                        </p>
+
+                        <h3 class="h5">Saved plan</h3>
+                        <p id="savedPlan">
+                            No trip plan saved on this browser yet.
+                        </p>
+
+                        <button
+                            class="btn btn-outline-secondary btn-sm"
+                            id="clearPlan"
+                            type="button"
+                        >
+                            Clear saved plan
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer mt-5">
+        <div class="container py-4">
+            <p class="mb-1">© 2026 Discover Lesotho Tourism</p>
+            <small>
+                
+            </small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

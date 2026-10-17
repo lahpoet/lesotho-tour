@@ -1,0 +1,225 @@
+/* Main styles for Discover Lesotho */
+
+:root {
+    --forest: #2d4933;
+    --leaf: #426b4a;
+    --cream: #f7f5ef;
+    --ink: #292929;
+    --card: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.6;
+}
+
+.site-header {
+    background: var(--leaf);
+    color: #fff;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+.eyebrow {
+    font-size: .78rem;
+    letter-spacing: .15em;
+    font-weight: bold;
+}
+
+.site-nav {
+    background: var(--forest);
+}
+
+.site-nav .navbar-brand {
+    font-weight: 700;
+}
+
+.site-nav .nav-link {
+    color: #f7f5ef;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+    color: #d7e8c9;
+}
+
+main {
+    min-height: 55vh;
+}
+
+h2 {
+    color: var(--forest);
+    margin-bottom: .8rem;
+}
+
+h3 {
+    color: var(--forest);
+}
+
+.main-photo {
+    width: 100%;
+    max-height: 390px;
+    object-fit: cover;
+}
+
+.hero-panel {
+    background: #e8eee4;
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: 10px;
+}
+
+.card {
+    border: 1px solid #d9dfd5;
+    box-shadow: 0 3px 10px rgba(30, 50, 30, .05);
+}
+
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-link {
+    color: var(--forest);
+}
+
+.highlight {
+    background: #e8eee4;
+}
+
+.form-panel {
+    background: #fff;
+    border: 1px solid #d9dfd5;
+    border-radius: 8px;
+    padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.btn-primary {
+    background: var(--leaf);
+    border-color: var(--leaf);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--forest);
+    border-color: var(--forest);
+}
+
+.btn-outline-success {
+    color: var(--forest);
+    border-color: var(--leaf);
+}
+
+.btn-outline-success:hover,
+.btn-outline-success.active {
+    color: #fff;
+    background: var(--leaf);
+}
+
+.place-card img {
+    height: 190px;
+    object-fit: cover;
+}
+
+.gallery-carousel-img {
+    height: clamp(230px, 45vw, 480px);
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, .55);
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+.gallery-thumb {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.gallery-thumb img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform .2s ease;
+}
+
+.gallery-thumb:hover img,
+.gallery-thumb:focus img {
+    transform: scale(1.02);
+}
+
+.site-footer {
+    background: var(--forest);
+    color: #fff;
+    text-align: center;
+}
+
+body.dark-mode {
+    --cream: #202720;
+    --ink: #f2f2ed;
+    --card: #303a31;
+    background: var(--cream);
+    color: var(--ink);
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #d4e6ce;
+}
+
+body.dark-mode .card,
+body.dark-mode .form-panel,
+body.dark-mode .modal-content {
+    background: var(--card);
+    color: var(--ink);
+    border-color: #526252;
+}
+
+body.dark-mode .hero-panel,
+body.dark-mode .highlight {
+    background: #303a31;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #202720;
+    color: #fff;
+    border-color: #687568;
+}
+
+body.dark-mode .accordion-item,
+body.dark-mode .accordion-button {
+    background: #303a31;
+    color: #f2f2ed;
+}
+
+@media (max-width: 575.98px) {
+    .site-header .container {
+        padding-top: 1.25rem !important;
+        padding-bottom: 1.25rem !important;
+    }
+
+    .gallery-thumb img {
+        height: 135px;
+    }
+
+    .card-img-top {
+        height: 170px;
+    }
+}

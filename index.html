@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <meta content="A student tourism website introducing visitors to Lesotho." name="description"/>
+
+        <title>Discover Lesotho | Discover Lesotho</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="container py-4">
+                <p class="eyebrow mb-1">THE MOUNTAIN KINGDOM</p>
+                <h1>Discover Lesotho</h1>
+                <p class="mb-0">A simple guide to places and experiences in Lesotho</p>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Discover Lesotho</a>
+
+                <button aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <button aria-pressed="false" class="btn btn-outline-light btn-sm" id="themeToggle" type="button">Dark mode</button>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container py-4">
+            <div class="alert alert-success" role="alert">
+                Welcome! Use this small guide to explore places and experiences in Lesotho.
+            </div>
+
+            <section class="hero-panel row align-items-center g-4 mb-5">
+                <div class="col-lg-6">
+                    <h2>Discover something new</h2>
+                    <p>Lesotho is known for its mountain scenery, Basotho culture and outdoor adventures. This website shares a few ideas for planning a visit.</p>
+                    <a class="btn btn-primary me-2 mb-2" href="services.html">Explore destinations</a>
+                    <a class="btn btn-outline-secondary mb-2" href="contact.html">Plan a visit</a>
+                </div>
+
+                <div class="col-lg-6">
+                    <img alt="Mountain peaks and a wide natural landscape" class="img-fluid rounded main-photo" src="https://www.kanaga-at.com/wp-content/uploads/2021/07/lesotho_paesaggi_del_lesotho.jpg"/>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2>What would you like to explore?</h2>
+
+                <div class="row g-3">
+                    <div class="col-sm-6 col-lg-4">
+                        <article class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-success">Nature</span>
+                                <h3 class="h5 mt-2">Mountain views</h3>
+                                <p>Find waterfalls, highlands and quiet scenic areas.</p>
+                                <a class="card-link" href="services.html">See destinations</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <article class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-warning">Culture</span>
+                                <h3 class="h5 mt-2">Basotho traditions</h3>
+                                <p>Learn about local crafts, clothing, food and history.</p>
+                                <a class="card-link" href="about.html">Learn about Lesotho</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4">
+                        <article class="card h-100">
+                            <div class="card-body">
+                                <span class="badge text-bg-info">Activities</span>
+                                <h3 class="h5 mt-2">Outdoor experiences</h3>
+                                <p>Look into hiking, horse riding and guided visits.</p>
+                                <a class="card-link" href="services.html">View activities</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Quick travel tips</h2>
+
+                <div class="accordion" id="tipsAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button aria-expanded="true" class="accordion-button" data-bs-target="#tipOne" data-bs-toggle="collapse" type="button">What should I pack?</button>
+                        </h3>
+
+                        <div class="accordion-collapse collapse show" data-bs-parent="#tipsAccordion" id="tipOne">
+                            <div class="accordion-body">
+                                Bring comfortable walking shoes and warm layers. Mountain weather can change quickly.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-target="#tipTwo" data-bs-toggle="collapse" type="button">How should I plan travel?</button>
+                        </h3>
+
+                        <div class="accordion-collapse collapse" data-bs-parent="#tipsAccordion" id="tipTwo">
+                            <div class="accordion-body">
+                                Check road conditions and local guidance before travelling to remote areas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer mt-5">
+            <div class="container py-4">
+                <p class="mb-1">© 2026 Discover Lesotho Tourism</p>
+                <small></small>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
